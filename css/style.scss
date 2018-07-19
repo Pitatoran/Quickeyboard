@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$snow: #fafafa;
+$mainblack: #242830;
+$info: #00a5bb;
+$ff: 'Raleway', sans-serif;
+
+@mixin bg-image($image, $height) {
+  background: linear-gradient(
+    rgba(7,107,255, 0.7),
+    rgba(7,107,255, 0.7)),
+    url($image);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: $height;
+}
+
+body {
+  background: white;
+  font-family: $ff;
+}
+
+.full-page {
+  width: 100vw;
+  @include bg-image('https://img00.deviantart.net/573f/i/2015/258/5/9/atmospheric_perspective_by_leeshahannigan-d99odid.jpg', 600px);
+  overflow: hidden;
+}
+
+.wrapper {
+}
+
+.statistic {
+  border-radius: 10px;
+  color: white;
+}
+
+.test-wrapper {
+    border: 5px solid $info;
+    border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+}
+
+#footer-fix {
+  width: 100vw;
+  background-color: $mainblack;
+
+  .footer-link {
+    list-style-type: none;
+  }
+
+  hr {
+    border-color: white;
+  }
+}

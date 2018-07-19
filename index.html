@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Quickeyboard</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-site" data-offset="70" id="home">
+
+    <div class="container">
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="navbar-site">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Quickeyboard</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#test">TEST</a></li>
+                <li class="nav-item"><a class="nav-link" href="#info">INFO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer-fix">ABOUT</a></li>
+              </ul>
+        </div>
+      </nav>
+    </div>
+
+    <header class="full-page">
+    </header>
+
+    <div class="wrapper mt-5" id="test">
+      <header class="container">
+          <h1 class="text-center">Test Yourself</h1>
+      </header>
+      <main class="container">
+          <article class="text-center">
+              <p>
+                Welcome to a simple type quick simulation. Here you can test yourself
+                on the keyboard and check your performance, such as WPM.
+              </p>
+          </article>
+          <section class="test-area">
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div id="origin-text">
+                    <p>"Just because beans are expensive does not mean the coffee will turn out well. Nothing will if you brew it without care. But the opposite is also true. Even cheap beans can be flavorful if you brew them with care to bring out their unique qualities."</p>
+                </div><!-- #origin-text -->
+
+                <div class="test-wrapper">
+                    <textarea class="form-control" rows="6" placeholder="Clock Start When You Type" id="test-area"></textarea>
+                </div><!-- .test-wrapper -->
+
+                <div class="">
+                    <section id="clock">
+                        <div class="timer">00:00:00</div>
+                    </section>
+
+                    <button type="button" class="btn btn-primary" id="reset">Start over</button>
+                </div>
+              </div>
+              <div class="col-md-6 bg-dark statistic mt-4">
+
+                <h1 class="text-center text-white mb-5 mt-3">Performance</h1>
+                <div class="mt-5 mb-5 container">
+                  Result Time: <span id="resultTime"></span> <br>
+                  Words: <span id="wordCount"></span> <br>
+                  WPM: <span id="WPM"></span> <br>
+                </div>
+              </div>
+            </div>
+          </section><!-- .test-area -->
+      </main>
+    </div>
+
+    <div class="container mb-5" id="info">
+      <div class="card-deck text-center">
+        <div class="card border-0" data-aos="flip-left">
+          <div class="card-body">
+            <i class="fas fa-glasses fa-8x mb-4"></i>
+            <h5 class="card-title font-weight-bold">Check Performance</h5>
+            <p class="card-text">
+              After successfully completing the provided text, you will be
+              given your performance. What's important is your WPM. Averaging
+              around 38 - 40 words?
+            </p>
+          </div>
+        </div>
+        <div class="card border-0" data-aos="flip-left">
+          <div class="card-body">
+            <i class="far fa-check-circle fa-8x mb-4"></i>
+            <h5 class="card-title font-weight-bold">Better Accurancy</h5>
+            <p class="card-text">
+              Improve and heighten your accurancy with repeating these texts
+              multiple times. The more repetition, the more fluent you'll
+              become.
+            </p>
+          </div>
+        </div>
+        <div class="card border-0" data-aos="flip-left">
+          <div class="card-body">
+            <i class="fas fa-fighter-jet fa-8x mb-4"></i>
+            <h5 class="card-title font-weight-bold">Learn Faster</h5>
+            <p class="card-text">
+              As you are typing you are improving. Just make sure that you
+              dedicate yourself into these exercise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="footer-fix">
+      <footer class="container">
+        <div class="row">
+          <div class="col-lg-4 mt-5">
+              <hr>
+              <h4 class="text-white">Stay in the loop!</h4>
+              <p class="text-white">
+                Get more updates about my projects and <br>
+                other websites
+                and youtube video, I make in the future.
+              </p>
+            <div class="input-group">
+              <input type="text" class="w-75" name="donation" placeholder="Email">
+              <button type="button" name="button" class="btn btn-danger">
+                  Email
+              </button>
+            </div>
+          </div> <!-- col -->
+
+          <div class="col-lg-4 mt-5">
+            <p class="text-white">Thanks for visiting this site. This is one of
+              my many projects that I make as a hobby and interst in web
+              development. This know more about me or just out my other projects
+              visit my github page. <br>
+            <br>
+            In regards to the website. It was constructed using Bootstrap for HTML 5,
+            SASS for CSS, and Basic JS. If there is any issue, please hit me up on my Github.
+            </thead>
+            </p>
+          </div> <!-- col -->
+
+          <div class="col-lg-4 mt-5">
+            <div class="container">
+              <h4 class="text-white"><b><u>Peter Tran - 2018</u></b></h4>
+            </div>
+              <ul class="footer-link">
+                <li class="text-primary"><b>Other Sites</b></li>
+                <li><a href="https://pitatoran.github.io/Aerospace/" target="_blank" class="text-white">LearnAerospace</a></li>
+                <li><a href="https://pitatoran.github.io/Time/" target="_blank" class="text-white">Timer</a></li>
+                <li><a href="https://pitatoran.github.io/hsc" target="_blank" class="text-white">HSCNotes</a></li>
+                <li><a href="https://pitatoran.github.io/Portfolio" target="_blank" class="text-white">Portfolio</a></li>
+              </ul>
+              <hr class="mt-5">
+
+              <a href="#home" class="btn btn-white float-right">
+                <p class="text-center text-white">Home &uarr;</p>
+              </a>
+          </div> <!-- col -->
+        </div> <!-- row -->
+      </footer>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery, Popper.js, Bootstrap JS, Personal JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js" async></script>
+
+    <script>
+
+    $(function() {
+       var topoffset = 70; //variable for menu height
+
+       //Use smooth scrolling when clicking on navigation
+       $('a').click(function() {
+         if (location.pathname.replace(/^\//,'') ===
+           this.pathname.replace(/^\//,'') &&
+           location.hostname === this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+               scrollTop: target.offset().top-topoffset
+             }, 500);
+             return false;
+           } //target.length
+         } //click function
+       }); //smooth scrolling
+
+     });
+
+      AOS.init();
+    </script>
+</body>
+
+</html>
